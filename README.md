@@ -106,12 +106,13 @@ Then: Terminal -> PW7 -> FFont -> Fira Code Mono
 CLick on every tool that needs Admin priviledges and when it is prompted to elevate use this:
 <img width="841" height="1203" alt="grafik" src="https://github.com/user-attachments/assets/4882a1b2-c49a-4e8d-99d0-7a0ce06d153c" />
 
-
 ## Manual Work
 * MemProcFS Testing
 * Plaso Testing
 * Run Arsenal Image Mounter and install driver
 * Run in powershell: `update-help`
+* Disable Modern Standby (Fast Boot - Energy Settings) and Autoplay (Autoplay settings)
+* Install Dracula Themes
 
 # Create System Backup using Ash BU or a comparable Tool.
 
