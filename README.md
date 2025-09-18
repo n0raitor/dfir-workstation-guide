@@ -106,13 +106,31 @@ Then: Terminal -> PW7 -> FFont -> Fira Code Mono
 CLick on every tool that needs Admin priviledges and when it is prompted to elevate use this:
 <img width="841" height="1203" alt="grafik" src="https://github.com/user-attachments/assets/4882a1b2-c49a-4e8d-99d0-7a0ce06d153c" />
 
+## Plaso Installation
+Download the MS Build Tools and import the config in this repo to install some compiler
+
+Open CMD and type Python and install the MS Store Package of Python3 (3.13 recently)
+
+Run x64 Native Tools Command Prompt for VS 2022 and run:
+```cmd
+SET DISTUTILS_USE_SDK=1
+SET MSSdk=1
+python -m ensurepip --upgrade
+pip install -U pip setuptools wheel
+pip install plaso
+```
+Add to env var
+`C:\Users\<Username>\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\Scripts`
+
+
+
 ## Manual Work
 * MemProcFS Testing
-* Plaso Testing
 * Run Arsenal Image Mounter and install driver
 * Run in powershell: `update-help`
 * Disable Modern Standby (Fast Boot - Energy Settings) and Autoplay (Autoplay settings)
 * Install Dracula Themes
+* Feel free to test some instructions and scripts in the folder: ./scripts
 
 # Create System Backup using Ash BU or a comparable Tool.
 
