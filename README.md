@@ -134,6 +134,7 @@ pip(3) install volatility3
 * Disable Modern Standby (Fast Boot - Energy Settings) and Autoplay (Autoplay settings)
 * Install Dracula Themes
 * Feel free to test some instructions and scripts in the folder: ./scripts
+* Add Perl and Mactime Shortcut
 
 # Create System Backup using Ash BU or a comparable Tool.
 
