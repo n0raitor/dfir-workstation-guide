@@ -127,6 +127,11 @@ Add to env var
 pip(3) install volatility3
 ```
 
+## Install sherlock
+```powershell
+pipx install sherlock-project
+```
+
 ## Manual Work
 * MemProcFS Testing
 * Run Arsenal Image Mounter and install driver
