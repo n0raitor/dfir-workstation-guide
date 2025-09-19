@@ -44,8 +44,6 @@ Run the DFIR-Installer as intended using the N0-Style Config.
 * Admin PowerShell
 * Crystal Disk Info
 
-## Fences / Desktop Shortcuts
-Navigate to Tools and create for each category a fence (use itop for free) and link each tool to its fence.
 
 ## Pin to Explorer QA:
 * Desktop
@@ -145,6 +143,11 @@ pipx install sherlock-project
 
 ## After restoring
 Run update script of dfir-installer and update wsl distros
+
+**Fences / Desktop Shortcuts**
+Navigate to Tools and create for each category a fence (use itop for free) and link each tool to its fence.
+
+
 ---
 
 **Disclaimer**: This is my way of working. Please feel free to fork this tutorial for your purposes but keep in mind that this is my setup I share with you. I am open for suggestions using the issues section but only in matter of Documentation improvements and Fixes of wrong commands. Thank you and I hope this guide will inspire your workflow :-)
