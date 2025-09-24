@@ -124,7 +124,7 @@ CLick on every tool that needs Admin priviledges and when it is prompted to elev
 <img width="841" height="1203" alt="grafik" src="https://github.com/user-attachments/assets/4882a1b2-c49a-4e8d-99d0-7a0ce06d153c" />
 
 ## Plaso Installation
-Download the MS Build Tools and import the config in this repo to install some compiler
+Download the MS Build Tools (Here)[https://visualstudio.microsoft.com/de/visual-cpp-build-tools/] and import the config in this repo to install some compiler
 
 Open CMD and type Python and install the MS Store Package of Python3 (3.13 recently)
 
