@@ -109,6 +109,8 @@ Install https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.4.0 Nerd FOnt Fi
 
 Then: Terminal -> PW7 -> FFont -> Fira Code Mono
 
+Set Default Terminal to: ``C:\Program Files\PowerShell\7\pwsh.exe``
+
 ## Set default apps:
 * Browser: Firefox
 * Notes: EditPad Lite
