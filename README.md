@@ -84,6 +84,9 @@ sudo cast install --mode=server teamdfir/sift-saltstack
 ```
 
 ## Install Powershell Profile Oh my Posh
+
+Set Default Terminal to: ``C:\Program Files\PowerShell\7\pwsh.exe``
+
 Open Powershell and run:
 ```powershell
 winget install JanDeDobbeleer.OhMyPosh -s winget
