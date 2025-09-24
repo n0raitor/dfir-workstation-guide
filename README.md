@@ -90,6 +90,20 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 notepad $PROFILE
 ```
+
+Fill in this into the opened editor:
+```
+# oh-my-posh mit Theme powerlevel10k_rainbow
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\powerlevel10k_rainbow.omp.json" | Invoke-Expression
+
+# Icons für Dateien und Ordner
+Import-Module -Name Terminal-Icons
+
+# History-Completion mit Vorschau
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -PredictionSource History
+```
+
 Install https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.4.0 Nerd FOnt Fira Code to fix Icons
 -> Using the dobble click feature of windows.
 
