@@ -14,7 +14,7 @@ Install Firmware updates (See vendor instruction)
 
 
 ## Install DFIR-Tools
-Run the DFIR-Installer as intended using the N0-Style Config.
+Run the DFIR-Installer as intended using the `dfir-installer-config-N0ForTop-2025-09-26.conf` file in this repo (Drop it in the Config folder of the installer an run the installer with -conf and the name (without .conf))
 
 ## Taskbar
 * Everything
