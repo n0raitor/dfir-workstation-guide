@@ -72,7 +72,7 @@ Download and run W10Privacy using the config in this repo
 Kali:
 ```bash
 sudo apt update && sudo apt upgrade -y
-sudo apt install kali-tools-forensics kali-tools-passwords kali-tools-reporting kali-tools-reverse-engineering kali-tools-social-engineering kali-tools-top10 kali-tools-windows-resources
+sudo apt install kali-tools-forensics kali-tools-passwords kali-tools-respond kali-tools-recover kali-tools-reporting kali-tools-reverse-engineering kali-tools-social-engineering kali-tools-top10 kali-tools-windows-resources
 ```
 if problems occure, use [this](https://github.com/n0raitor/kali-post-install)
 
