@@ -149,13 +149,15 @@ Add to env var
 `C:\Users\<Username>\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\Scripts`
 
 ## Install Volatility3
+Use previous Steps as in Plaso before the pip is used
 ```powershell
-pip(3) install volatility3
+pip install volatility3
 ```
 
 ## Install sherlock
+Use previous Steps as in Plaso before the pip is used
 ```powershell
-pipx install sherlock-project
+pip install sherlock-project
 ```
 
 ## Manual Work
