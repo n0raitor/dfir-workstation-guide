@@ -79,6 +79,12 @@ This should keep MS Defender Disabled over reboot.
 Kali:
 ```bash
 sudo apt update && sudo apt upgrade -y
+wget http://kali.download/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2025.1_all.deb
+sudo dpkg -i kali-archive-keyring_2025.1_all.deb
+sudo apt update
+sudo apt full-upgrade -y  # This may take some time!
+sudo apt update && sudo apt upgrade -y
+
 sudo apt install kali-tools-forensics kali-tools-passwords kali-tools-respond kali-tools-recover kali-tools-reporting kali-tools-reverse-engineering kali-tools-social-engineering kali-tools-top10 kali-tools-windows-resources
 ```
 if problems occure, use [this](https://github.com/n0raitor/kali-post-install)
