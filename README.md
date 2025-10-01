@@ -116,9 +116,8 @@ Import-Module -Name Terminal-Icons
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -PredictionSource History
 ```
-Use this to install Fira Code: `oh-my-posh font install FiraCode`
-Deprecated: Install https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.4.0 Nerd FOnt Fira Code to fix Icons
--> Using the dobble click feature of windows.
+**Use this** to install Fira Code: `oh-my-posh font install FiraCode`
+~~Deprecated: Install https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.4.0 Nerd FOnt Fira Code to fix Icons -> Using the dobble click feature of windows.~~
 
 Then: Terminal -> PW7 -> FFont -> Fira Code Mono
 
