@@ -101,7 +101,6 @@ Open Powershell and run:
 winget install JanDeDobbeleer.OhMyPosh --source winget --scope user --force
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 oh-my-posh get shell
-oh-my-posh font install FiraCode
 oh-my-posh enable reload
 notepad $PROFILE
 ```
@@ -117,8 +116,8 @@ Import-Module -Name Terminal-Icons
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -PredictionSource History
 ```
-
-Install https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.4.0 Nerd FOnt Fira Code to fix Icons
+Use this to install Fira Code: `oh-my-posh font install FiraCode`
+Deprecated: Install https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.4.0 Nerd FOnt Fira Code to fix Icons
 -> Using the dobble click feature of windows.
 
 Then: Terminal -> PW7 -> FFont -> Fira Code Mono
