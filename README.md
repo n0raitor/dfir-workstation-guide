@@ -68,6 +68,13 @@ Also go threw every settings
 ## Hardening
 Download and run W10Privacy using the config in this repo
 
+If Defender will not be disabled after reboot, use the GroupPolicy Editory to set the `Computer -> Administrator -> Wind-comp -> MS Defender`
+* MS Defender AV Disabled: Active
+* RealtimeProtection -> Disable RTP: Active
+
+This should keep MS Defender Disabled over reboot.
+
+
 ## Update WSL
 Kali:
 ```bash
