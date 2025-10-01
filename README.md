@@ -98,15 +98,17 @@ Set Default Terminal to: ``C:\Program Files\PowerShell\7\pwsh.exe``
 
 Open Powershell and run:
 ```powershell
-winget install JanDeDobbeleer.OhMyPosh -s winget
+winget install JanDeDobbeleer.OhMyPosh --source winget --scope user --force
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+oh-my-posh get shell
+oh-my-posh font install FiraCode
+oh-my-posh enable reload
 notepad $PROFILE
 ```
 
 Fill in this into the opened editor:
 ```
-# oh-my-posh mit Theme powerlevel10k_rainbow
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\powerlevel10k_rainbow.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config 'powerlevel10k_classic' | Invoke-Expression
 
 # Icons für Dateien und Ordner
 Import-Module -Name Terminal-Icons
