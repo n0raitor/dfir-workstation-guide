@@ -76,7 +76,7 @@ This should keep MS Defender Disabled over reboot.
 
 
 ## Update WSL
-Kali:
+Kali (From the MS Store):
 ```bash
 sudo apt update && sudo apt upgrade -y
 wget http://kali.download/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2025.1_all.deb
@@ -90,12 +90,17 @@ sudo apt install kali-tools-forensics kali-tools-passwords kali-tools-respond ka
 if problems occure, use [this](https://github.com/n0raitor/kali-post-install)
 
 
-Ubuntu 22.04 LTS:
+Ubuntu 22.04 LTS (From the MS Store):
 ```bash
 sudo su
 wget https://github.com/ekristen/cast/releases/download/v0.16.9/cast-v0.16.9-linux-amd64.deb
 dpkg -i cast-v0.16.9-linux-amd64.deb
 sudo cast install --mode=server teamdfir/sift-saltstack
+```
+
+If something breakes, use this to uninstall a wsl distro:
+```powershell
+wsl --unregister <Distro> # use <wsl list> to get all distros
 ```
 
 ## Install Powershell Profile Oh my Posh
