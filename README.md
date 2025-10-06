@@ -84,6 +84,7 @@ sudo apt full-upgrade -y  # This may take some time!
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install kali-tools-forensics kali-tools-passwords kali-tools-respond kali-tools-recover kali-tools-reporting kali-tools-reverse-engineering kali-tools-social-engineering kali-tools-top10 kali-tools-windows-resources
+
 ```
 if problems occure, use [this](https://github.com/n0raitor/kali-post-install)
 
@@ -91,12 +92,20 @@ if problems occure, use [this](https://github.com/n0raitor/kali-post-install)
 ### Sift Workstation WSL - Ubuntu 22.04 LTS (From the MS Store):
 ```bash
 sudo su
+
 ```
 ```
 cd ~
 wget https://github.com/ekristen/cast/releases/download/v0.16.9/cast-v0.16.9-linux-amd64.deb
 dpkg -i cast-v0.16.9-linux-amd64.deb
 sudo cast install --mode=server teamdfir/sift-saltstack
+
+```
+If you need to rerun the last command, you might get an error like `FATA[0116] handling file: salt/lib/libkrad.so.0:`. Use this to fix this error:
+```bash
+rm -rf /var/cache/cast/
+sudo cast install --mode=server teamdfir/sift-saltstack
+
 ```
 
 ### REMnux WSL - Ubuntu 20.04 LTS (From the MS Store):
@@ -109,6 +118,7 @@ Setup:
 ```bash
 wget https://REMnux.org/remnux-cli
 sha256sum remnux-cli
+
 ```
 
 Validate with the Hash on: https://docs.remnux.org/install-distro/install-from-scratch
@@ -119,12 +129,14 @@ chmod +x remnux
 sudo mv remnux /usr/local/bin
 sudo apt install -y gnupg curl
 sudo remnux install
+
 ```
 REMnux installation complete. Restart WSL to get everything set up (or Reboot later)
 
 **If something breakes**: use this to uninstall a wsl distro:
 ```powershell
 wsl --unregister <Distro> # use <wsl list> to get all distros
+
 ```
 
 ## Install Powershell Profile Oh my Posh
@@ -138,6 +150,7 @@ Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 oh-my-posh get shell
 oh-my-posh enable reload
 notepad $PROFILE
+
 ```
 
 Fill in this into the opened editor:
@@ -179,6 +192,7 @@ SET MSSdk=1
 python -m ensurepip --upgrade
 pip install -U pip setuptools wheel
 pip install plaso
+
 ```
 Add to env var
 `C:\Users\<Username>\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\Scripts`
@@ -187,12 +201,14 @@ Add to env var
 Use previous Steps as in Plaso before the pip is used
 ```powershell
 pip install volatility3
+
 ```
 
 ## Install sherlock
 Use previous Steps as in Plaso before the pip is used
 ```powershell
 pip install sherlock-project
+
 ```
 
 ## Manual Work
