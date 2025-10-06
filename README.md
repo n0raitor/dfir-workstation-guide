@@ -93,12 +93,14 @@ if problems occure, use [this](https://github.com/n0raitor/kali-post-install)
 sudo su
 ```
 ```
+cd ~
 wget https://github.com/ekristen/cast/releases/download/v0.16.9/cast-v0.16.9-linux-amd64.deb
 dpkg -i cast-v0.16.9-linux-amd64.deb
 sudo cast install --mode=server teamdfir/sift-saltstack
 ```
 
-If something breakes, use this to uninstall a wsl distro:
+
+**If something breakes**: use this to uninstall a wsl distro:
 ```powershell
 wsl --unregister <Distro> # use <wsl list> to get all distros
 ```
