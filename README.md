@@ -73,8 +73,8 @@ If Defender will not be disabled after reboot, use the GroupPolicy Editory to se
 This should keep MS Defender Disabled over reboot.
 
 
-## Update WSL
-**Kali (From the MS Store)**:
+## Setup WSL
+### Kali WSL (From the MS Store):
 ```bash
 sudo apt update && sudo apt upgrade -y
 wget http://kali.download/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2025.1_all.deb
@@ -88,7 +88,7 @@ sudo apt install kali-tools-forensics kali-tools-passwords kali-tools-respond ka
 if problems occure, use [this](https://github.com/n0raitor/kali-post-install)
 
 
-**Ubuntu 22.04 LTS (From the MS Store)**:
+### Sift Workstation WSL - Ubuntu 22.04 LTS (From the MS Store):
 ```bash
 sudo su
 ```
@@ -99,6 +99,28 @@ dpkg -i cast-v0.16.9-linux-amd64.deb
 sudo cast install --mode=server teamdfir/sift-saltstack
 ```
 
+### REMnux WSL - Ubuntu 20.04 LTS (From the MS Store):
+**Important**: Use these Facts:
+* (Full name: REMnux User)
+* Username: remnux
+* Password: malware
+
+Setup:
+```bash
+wget https://REMnux.org/remnux-cli
+sha256sum remnux-cli
+```
+
+Validate with the Hash on: https://docs.remnux.org/install-distro/install-from-scratch
+
+```bash
+mv remnux-cli remnux
+chmod +x remnux
+sudo mv remnux /usr/local/bin
+sudo apt install -y gnupg curl
+sudo remnux install
+```
+REMnux installation complete. Restart WSL to get everything set up (or Reboot later)
 
 **If something breakes**: use this to uninstall a wsl distro:
 ```powershell
