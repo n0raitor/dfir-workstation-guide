@@ -133,7 +133,8 @@ sudo remnux install
 ```
 REMnux installation complete. Restart WSL to get everything set up (or Reboot later)
 
-**If something breakes**: use this to uninstall a wsl distro:
+### If something breakes: 
+Use this to uninstall a wsl distro:
 ```powershell
 wsl --unregister <Distro> # use <wsl list> to get all distros
 
