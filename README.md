@@ -48,8 +48,6 @@ Run the [DFIR-Installer](https://github.com/n0raitor/dfir-installer) as intended
 ## Pin to Explorer QA:
 * Desktop
 * Photos
-* Music
-* Videos
 * Downloads
 * Documents
 * Trash
