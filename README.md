@@ -12,6 +12,9 @@ Install Firmware updates (See vendor instruction)
 * Open the update Settings and update until there are no updates to get installed
 * Open "Enable Feature" and enable WSL and Windows-Sandbox
 
+## Power Settings
+Rekated Settings -> Choose what the power button does:
+* Uncheck "Turn on fast startup"
 
 ## Install DFIR-Tools
 Run the [DFIR-Installer](https://github.com/n0raitor/dfir-installer) as intended using the `dfir-installer-config-N0ForTop-2025-09-26.conf` file in this repo (Drop it in the Config folder of the installer an run the installer with -conf and the name (without .conf))
