@@ -99,8 +99,8 @@ sudo su
 ```
 ```
 cd ~
-wget https://github.com/ekristen/cast/releases/download/v0.16.9/cast-v0.16.9-linux-amd64.deb
-dpkg -i cast-v0.16.9-linux-amd64.deb
+wget https://github.com/ekristen/cast/releases/download/v1.0.4/cast-v1.0.4-linux-amd64.deb
+dpkg -i cast-v1.0.4-linux-amd64.deb
 sudo cast install --mode=server teamdfir/sift-saltstack
 
 ```
