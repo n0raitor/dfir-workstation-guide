@@ -113,6 +113,7 @@ sudo cast install --mode=server teamdfir/sift-saltstack
 
 ### REMnux WSL - Ubuntu 20.04 LTS (From the MS Store):
 **Important**: Use these Facts:
+* DO NEVER UPGRADE! REMnux Installation / Upgrade might not work if so (Always use `sudo remnux upgrade` to upgrade the tools after installation)
 * (Full name: REMnux User)
 * Username: remnux
 * Password: malware
