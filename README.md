@@ -17,7 +17,7 @@ Rekated Settings -> Choose what the power button does:
 * Uncheck "Turn on fast startup"
 
 ## Install DFIR-Tools
-Run the [DFIR-Installer](https://github.com/n0raitor/dfir-installer) as intended using the `dfir-installer-config-N0ForTop-2025-09-26.conf` file in this repo (Drop it in the Config folder of the installer an run the installer with -conf and the name (without .conf))
+Run the [DFIR-Installer](https://github.com/n0raitor/dfir-installer) as intended using the .conf file in the configs folder in this repo (Drop it in the Config folder of the installer an run the installer with -conf and the name (without .conf), more insights in the Repos README)
 
 ## Taskbar
 * Everything
@@ -30,77 +30,90 @@ Run the [DFIR-Installer](https://github.com/n0raitor/dfir-installer) as intended
 * VM-Ware
 * Visio
 * Marktext
-* Chatgpt
-* Visual Studio E
+* EditPad Lite 8
+* Visual Studio Enterprise
 * Visual Studio Code
-* Pycharm
-* Office
+* Libre Office
 * Github Desktop
-* Proton Mail
+* CyberDuck
 * Snipping Tool
+* WSL Distros
 
 ## Pin to Desktop
 * Bitlocker Menu
-* Windows-Tools
-* exiftool(-k).exe
+* Windows-Tools / Administrative Tools
+* exiftool(-a -u -k).exe
 * Admin CMD
 * Admin PowerShell
 * Crystal Disk Info
+* (DFIR-Installer Dependent: update-system.ps1 and Tools.lnk)
 
 
 ## Pin to Explorer QA:
 * Desktop
-* Photos
 * Downloads
 * Documents
 * Trash
 * `<Username>`
 * DFIR (C:\DFIR)
+* DFIR-Custom (C:\DFIR-Custom)
 * Cases
 * GitHub
+* VirtualMachines
 
 ## Edit Explorer Options
 <img width="636" height="727" alt="grafik" src="https://github.com/user-attachments/assets/e5fa098e-271a-46b7-87c0-a527ea17f68b" />
 
 
 ## Set a Wallpaper and Color Configs
-Also go threw every settings
+* Set wallpaper (if you like, my prefered one is inside of the wallpaper folder)
+* Color: #44475A
+* Windows-Mode: Dark
+* App-Mode: Light
 
 ## Hardening
-Download and run W10Privacy using the config in this repo
+Download and run W10Privacy using the config in this repo (*configs/*)
 
-If Defender will not be disabled after reboot, use the GroupPolicy Editory to set the `Computer -> Administrator -> Wind-comp -> MS Defender`
+If Defender is not disabled after reboot, use the GroupPolicy Editory to set the `Computer -> Administrator -> Wind-comp -> MS Defender`
 * MS Defender AV Disabled: Active
 * RealtimeProtection -> Disable RTP: Active
 
-This should keep MS Defender Disabled over reboot.
+This should keep MS Defender Disabled over reboots.
 
 
 ## Setup WSL
 ### Kali WSL (From the MS Store):
+
+Use [this](https://github.com/n0raitor/kali-post-install) for the latest Installation Guide for Kali (WSL)
+
 ```bash
 sudo apt update && sudo apt upgrade -y
+
+# Only if Errors occure during update and upgrade
+# Start 
 wget http://kali.download/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2025.1_all.deb
 sudo dpkg -i kali-archive-keyring_2025.1_all.deb
 sudo apt update
 sudo apt full-upgrade -y  # This may take some time!
 sudo apt update && sudo apt upgrade -y
+# End
 
+# Continue here, if no errors occured (or if you fixed them)
 sudo apt install kali-tools-forensics kali-tools-passwords kali-tools-respond kali-tools-recover kali-tools-reporting kali-tools-reverse-engineering kali-tools-social-engineering kali-tools-top10 kali-tools-windows-resources
 
 ```
-if problems occure, use [this](https://github.com/n0raitor/kali-post-install)
 
+### Sift Workstation and REMnux WSL - Ubuntu 24.04 LTS (From the MS Store):
 
-### Sift Workstation WSL - Ubuntu 22.04 LTS (From the MS Store):
+**Sift Workstation**
 ```bash
 sudo su
 
 ```
 ```
 cd ~
-wget https://github.com/ekristen/cast/releases/download/v1.0.4/cast-v1.0.4-linux-amd64.deb
-dpkg -i cast-v1.0.4-linux-amd64.deb
+wget https://github.com/ekristen/cast/releases/download/v1.0.7/cast-v1.0.7-linux-amd64.deb
+dpkg -i cast-v1.0.7-linux-amd64.deb
 sudo cast install --mode=server teamdfir/sift-saltstack
 
 ```
@@ -108,34 +121,10 @@ If you need to rerun the last command, you might get an error like `FATA[0116] h
 ```bash
 rm -rf /var/cache/cast/
 sudo cast install --mode=server teamdfir/sift-saltstack
-
 ```
 
-### REMnux WSL - Ubuntu 20.04 LTS (From the MS Store):
-**Important**: Use these Facts:
-* DO NEVER UPGRADE! REMnux Installation / Upgrade might not work if so (Always use `sudo remnux upgrade` to upgrade the tools after installation)
-* (Full name: REMnux User)
-* Username: remnux
-* Password: malware
-
-Setup:
-```bash
-wget https://REMnux.org/remnux-cli
-sha256sum remnux-cli
-
-```
-
-Validate with the Hash on: https://docs.remnux.org/install-distro/install-from-scratch
-
-```bash
-mv remnux-cli remnux
-chmod +x remnux
-sudo mv remnux /usr/local/bin
-sudo apt install -y gnupg curl
-sudo remnux install
-
-```
-REMnux installation complete. Restart WSL to get everything set up (or Reboot later)
+**REMnux**
+Follow this guide: https://docs.remnux.org/install-distro/add-to-existing-system
 
 ### If something breakes: 
 Use this to uninstall a wsl distro:
@@ -172,13 +161,13 @@ Set-PSReadLineOption -PredictionSource History
 **Use this** to install Fira Code: `oh-my-posh font install FiraCode`
 ~~Deprecated: Install https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.4.0 Nerd FOnt Fira Code to fix Icons -> Using the dobble click feature of windows.~~
 
-Then: Terminal -> PW7 -> FFont -> Fira Code Mono
+Then: Terminal -> PW7 -> Font -> Fira Code Mono
 
 Set Default Terminal to: ``C:\Program Files\PowerShell\7\pwsh.exe``
 
 ## Set default apps:
 * Browser: Firefox
-* Notes: EditPad Lite
+* Notes: EditPad Lite 8
 * 
 
 ## Disable UAC
@@ -186,9 +175,9 @@ CLick on every tool that needs Admin priviledges and when it is prompted to elev
 <img width="841" height="1203" alt="grafik" src="https://github.com/user-attachments/assets/4882a1b2-c49a-4e8d-99d0-7a0ce06d153c" />
 
 ## Plaso Installation
-Download the MS Build Tools [Here](https://visualstudio.microsoft.com/de/visual-cpp-build-tools/) and import the config in this repo to install some compiler
+Download the MS Build Tools [Here](https://visualstudio.microsoft.com/de/visual-cpp-build-tools/) and import the config in this repo to install some compiler (Folder: *configs/*)
 
-Open CMD and type Python and install the MS Store Package of Python3 (3.13 recently)
+Open CMD and type ``Python`` and install the MS Store Package of Python3 (3.13 recently)
 
 Run x64 Native Tools Command Prompt for VS 2022 and run:
 ```cmd
@@ -199,6 +188,7 @@ pip install -U pip setuptools wheel
 pip install plaso
 
 ```
+
 Add to env var
 `C:\Users\<Username>\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\Scripts`
 
@@ -221,17 +211,17 @@ pip install sherlock-project
 * Run Arsenal Image Mounter and install driver
 * Run in powershell: `update-help`
 * Disable Modern Standby (Fast Boot - Energy Settings) and Autoplay (Autoplay settings)
-* Install Dracula Themes
+* Install Dracula Themes (https://draculatheme.com/)
 * Feel free to test some instructions and scripts in the folder: ./scripts
 * Add Perl and Mactime Shortcut (Navigate to Sleuthkit folder and use `perl mactime.pl`)
 
 # Create System Backup using Ash BU or a comparable Tool.
 
 ## After restoring
-Run update script of dfir-installer and update wsl distros
+Run update script of dfir-installer and update wsl distros (``sudo apt update && sudo apt upgrade -y`)
 
 **Fences / Desktop Shortcuts**
-Navigate to Tools and create for each category a fence (use itop for free) and link each tool to its fence.
+Navigate to Tools and create for each category a fence (Free Alternative: itop) and link each tool to its fence.
 
 
 ---
