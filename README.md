@@ -218,7 +218,7 @@ pip install sherlock-project
 # Create System Backup using Ash BU or a comparable Tool.
 
 ## After restoring
-Run update script of dfir-installer and update wsl distros (``sudo apt update && sudo apt upgrade -y`)
+Run update script of dfir-installer and update wsl distros (``sudo apt update && sudo apt upgrade -y``)
 
 **Fences / Desktop Shortcuts**
 Navigate to Tools and create for each category a fence (Free Alternative: itop) and link each tool to its fence.
