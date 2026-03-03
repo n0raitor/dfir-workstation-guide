@@ -17,7 +17,7 @@ Rekated Settings -> Choose what the power button does:
 * Uncheck "Turn on fast startup"
 
 ## Install DFIR-Tools
-Run the [DFIR-Installer](https://github.com/n0raitor/dfir-installer) as intended using the .conf file in the configs folder in this repo (Drop it in the Config folder of the installer an run the installer with -conf and the name (without .conf), more insights in the Repos README)
+Run the [DFIR-Installer](https://github.com/n0raitor/dfir-installer) as intended using the Forensic-Workstation config ([Full List of Configs Here](https://github.com/n0raitor/dfir-installer-files/tree/main/Configs)) and run the installer with -conf and the name (without .conf), more insights in the Repos README
 
 ## Taskbar
 * Everything
